@@ -1,7 +1,9 @@
+![Node.js CI](https://github.com/blockcypher/node-client/workflows/Node.js%20CI/badge.svg)
+
 node-client
 ===========
 
-Node.js SDK for the BlockCypher Web services. See [http://dev.blockcypher.com](http://dev.blockcypher.com/) for detailed documentation.
+Node.js SDK for the BlockCypher Web services. See [https://www.blockcypher.com/dev/bitcoin/](https://www.blockcypher.com/dev/bitcoin/) for detailed documentation.
 
 To install, just use npm:
 
@@ -15,7 +17,7 @@ Examples
 ```javascript
 bcypher = require('blockcypher');
 
-var bcapi = new bcypher('btc','main','YOURTOKEN');
+var bcapi = new bcypher('btc','main',process.env.TOKEN);
 
 function printResponse(err, data) {
   if (err !== null) {
